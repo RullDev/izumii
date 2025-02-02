@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { SiGithub, SiSpotify, SiInstagram, SiWhatsapp } from "react-icons/si";
 import { Badge } from "@/components/ui/badge";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { CheckIcon } from "lucide-react";
 
 export function Header() {
   return (
@@ -20,7 +21,10 @@ export function Header() {
 
           <div className="text-center space-y-2">
             <h1 className="text-2xl font-bold tracking-tight text-zinc-100">
-              Natsumi つゐ <span className="text-blue-400">☑</span>
+              Natsumi つゐ{" "}
+              <span className="inline-flex items-center justify-center">
+                <CheckIcon className="h-5 w-5 text-blue-400" strokeWidth={3} />
+              </span>
             </h1>
             <p className="text-sm text-zinc-400">
               あなたがいてくれて、私はここにいる。

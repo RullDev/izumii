@@ -2,21 +2,24 @@ import { Header } from "@/components/Header";
 import { SpotifyCard } from "@/components/SpotifyCard";
 import { LinkCard } from "@/components/LinkCard";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-zinc-950">
+    <div className="min-h-screen bg-black">
       {/* Banner Background */}
       <div className="fixed inset-0 z-0">
-        <div 
-          className="absolute inset-0"
-          style={{
-            background: `url('https://api.dicebear.com/7.x/shapes/svg?seed=banner&backgroundColor=0f0f0f') center/cover no-repeat`,
-            filter: 'blur(90px) opacity(0.4)',
-            transform: 'scale(1.1)',
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-zinc-950/50 to-zinc-950" />
+        <AspectRatio ratio={16 / 9} className="w-full absolute top-0">
+          <div 
+            className="absolute inset-0"
+            style={{
+              background: `url('https://api.dicebear.com/7.x/shapes/svg?seed=banner&backgroundColor=0f0f0f') center/cover no-repeat`,
+              filter: 'blur(90px) opacity(0.4)',
+              transform: 'scale(1.1)',
+            }}
+          />
+        </AspectRatio>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black" />
       </div>
 
       {/* Content */}
