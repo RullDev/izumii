@@ -1,45 +1,44 @@
 import { Header } from "@/components/Header";
 import { SpotifyCard } from "@/components/SpotifyCard";
 import { LinkCard } from "@/components/LinkCard";
-import { Card } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-black text-white">
       <ScrollArea className="h-screen">
-        <div className="container mx-auto px-4 py-8">
+        <div className="container max-w-2xl mx-auto px-4 py-8">
           <Header />
-          
-          <div className="mt-8 grid gap-4">
+
+          <div className="mt-6 space-y-4">
+            <LinkCard
+              title="Personal Website"
+              description="About me."
+              icon="🌐"
+              href="#"
+            />
+            <LinkCard 
+              title="Character.ai RestAPI"
+              description="Documentation for Character.ai API."
+              icon="🔥"
+              href="#"
+            />
+            <LinkCard
+              title="WhatsApp Bot"
+              description="Personal bot WhatsApp."
+              icon="💬" 
+              href="#"
+            />
+            <LinkCard
+              title="WhatsApp Channel"
+              description="Channel about Natsumi Bot."
+              icon="✨"
+              href="#"
+            />
+          </div>
+
+          <div className="mt-6">
             <SpotifyCard />
-            
-            <div className="grid gap-4 sm:grid-cols-2">
-              <LinkCard
-                title="Personal Website"
-                description="My personal website built with Next.js"
-                icon="🌐"
-                href="#"
-              />
-              <LinkCard 
-                title="Character at RestAPI"
-                description="Personal character data accessible via REST API"
-                icon="👤"
-                href="#"
-              />
-              <LinkCard
-                title="WhatsApp Bot"
-                description="WhatsApp automation bot"
-                icon="💬" 
-                href="#"
-              />
-              <LinkCard
-                title="WhatsApp Channel"
-                description="My WhatsApp channel for updates"
-                icon="📢"
-                href="#"
-              />
-            </div>
           </div>
         </div>
       </ScrollArea>
