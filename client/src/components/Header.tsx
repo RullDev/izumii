@@ -14,38 +14,40 @@ export function Header() {
           </Avatar>
 
           <div className="text-center space-y-2">
-            <h1 className="text-2xl font-bold tracking-tight text-zinc-100">Natsumi つゐ</h1>
+            <h1 className="text-2xl font-bold tracking-tight text-zinc-100">
+              Natsumi つゐ <span className="text-blue-400">☑</span>
+            </h1>
             <p className="text-sm text-zinc-400">
               あなたがいてくれて、私はここにいる。
             </p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-2">
-            <Badge variant="secondary" className="bg-zinc-800/50 text-zinc-300">
+            <Badge variant="secondary" className="bg-zinc-800/50 text-zinc-300 hover:bg-zinc-700/50 transition-colors">
               <SiSpotify className="h-3.5 w-3.5 mr-1.5" /> Npoding
             </Badge>
-            <Badge variant="secondary" className="bg-zinc-800/50 text-zinc-300">
+            <Badge variant="secondary" className="bg-zinc-800/50 text-zinc-300 hover:bg-zinc-700/50 transition-colors">
               ✨ Tune
             </Badge>
-            <Badge variant="secondary" className="bg-zinc-800/50 text-zinc-300">
+            <Badge variant="secondary" className="bg-zinc-800/50 text-zinc-300 hover:bg-zinc-700/50 transition-colors">
               🎮 Anime
             </Badge>
-            <Badge variant="secondary" className="bg-zinc-800/50 text-zinc-300">
+            <Badge variant="secondary" className="bg-zinc-800/50 text-zinc-300 hover:bg-zinc-700/50 transition-colors">
               🎵 Music
             </Badge>
           </div>
 
           <div className="flex gap-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-100 transition-colors">
-              <SiGithub className="h-5 w-5" />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-100 transition-colors">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-100 transition-colors">
               <SiInstagram className="h-5 w-5" />
             </a>
-            <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-100 transition-colors">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-100 transition-colors">
+              <SiGithub className="h-5 w-5" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-100 transition-colors">
               <SiSpotify className="h-5 w-5" />
             </a>
-            <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-100 transition-colors">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-100 transition-colors">
               <SiWhatsapp className="h-5 w-5" />
             </a>
           </div>

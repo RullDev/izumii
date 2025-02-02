@@ -9,11 +9,11 @@ export default function Home() {
       {/* Banner Background */}
       <div className="fixed inset-0 z-0">
         <div 
-          className="absolute inset-0 bg-[url('https://api.dicebear.com/7.x/shapes/svg?seed=banner&backgroundColor=0f0f0f')] bg-cover bg-center"
+          className="absolute inset-0"
           style={{
-            filter: 'blur(100px)',
-            transform: 'scale(1.2)',
-            opacity: 0.5
+            background: `url('https://api.dicebear.com/7.x/shapes/svg?seed=banner&backgroundColor=0f0f0f') center/cover no-repeat`,
+            filter: 'blur(90px) opacity(0.4)',
+            transform: 'scale(1.1)',
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-zinc-950/50 to-zinc-950" />
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
 
           <footer className="mt-12 pb-8 text-center text-sm text-zinc-500">
-            © {new Date().getFullYear()} Natsumi. All rights reserved.
+            See what I'm currently listening on Spotify
           </footer>
         </div>
       </ScrollArea>

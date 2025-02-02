@@ -27,10 +27,13 @@ export function SpotifyCard() {
   if (!song?.isPlaying) {
     return (
       <Card className="bg-zinc-900/40 border-zinc-800">
-        <CardContent className="p-4">
-          <div className="flex items-center gap-3 text-zinc-400">
-            <SiSpotify className="h-5 w-5" />
-            <p className="text-sm">Not listening to anything</p>
+        <CardContent className="p-6">
+          <div className="flex flex-col items-center gap-3 text-zinc-400">
+            <SiSpotify className="h-6 w-6" />
+            <div className="text-center">
+              <p className="text-sm font-medium">No listening to anything</p>
+              <p className="text-xs mt-1">Spotify - Music and Podcasts</p>
+            </div>
           </div>
         </CardContent>
       </Card>
