@@ -10,13 +10,13 @@ export function Header() {
       <CardContent className="p-8">
         <div className="flex flex-col items-center gap-6">
           <Avatar className="h-24 w-24 ring-2 ring-zinc-800 ring-offset-2 ring-offset-zinc-950">
-            <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=natsumi&backgroundColor=b6e3f4" alt="Natsumi" />
-            <AvatarFallback>NA</AvatarFallback>
+            <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=rlzyy&backgroundColor=b6e3f4" alt="Rlzyy" />
+            <AvatarFallback>RL</AvatarFallback>
           </Avatar>
 
           <div className="text-center space-y-2">
             <h1 className="text-2xl font-bold tracking-tight text-zinc-100">
-              Natsumi つゐ{" "}
+              Rlzyy つゐ{" "}
               <span className="inline-flex items-center justify-center">
                 <CheckIcon className="h-5 w-5 text-blue-400" strokeWidth={3} />
               </span>
@@ -28,7 +28,7 @@ export function Header() {
 
           <div className="flex flex-wrap justify-center gap-2">
             <Badge variant="secondary" className="bg-zinc-800/50 text-zinc-300 hover:bg-zinc-700/50 transition-colors">
-              <SiSpotify className="h-3.5 w-3.5 mr-1.5" /> Npoding
+              <SiSpotify className="h-3.5 w-3.5 mr-1.5" /> Ngoding
             </Badge>
             <Badge variant="secondary" className="bg-zinc-800/50 text-zinc-300 hover:bg-zinc-700/50 transition-colors">
               ✨ Tune
