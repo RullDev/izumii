@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
+import { SiSpotify } from "react-icons/si";
 
 export function SpotifyCard() {
   const { data: song, isLoading } = useQuery({
@@ -25,18 +26,19 @@ export function SpotifyCard() {
 
   if (!song?.isPlaying) {
     return (
-      <Card>
+      <Card className="bg-zinc-900/50">
         <CardContent className="p-4">
-          <p className="text-sm text-muted-foreground">
-            No listening to anything
-          </p>
+          <div className="flex items-center gap-2 text-zinc-400">
+            <SiSpotify className="h-5 w-5" />
+            <p className="text-sm">No listening to anything</p>
+          </div>
         </CardContent>
       </Card>
     );
   }
 
   return (
-    <Card>
+    <Card className="bg-zinc-900/50">
       <CardContent className="p-4">
         <div className="flex items-center gap-4">
           <img
@@ -46,7 +48,7 @@ export function SpotifyCard() {
           />
           <div>
             <p className="font-medium">{song.title}</p>
-            <p className="text-sm text-muted-foreground">{song.artist}</p>
+            <p className="text-sm text-zinc-400">{song.artist}</p>
           </div>
         </div>
       </CardContent>

@@ -6,7 +6,18 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
-      <ScrollArea className="h-screen">
+      <div 
+        className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-zinc-800/50 to-transparent"
+        style={{
+          backgroundImage: "url('https://api.dicebear.com/7.x/identicon/svg?seed=banner')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'blur(8px)',
+          opacity: 0.5,
+        }}
+      />
+
+      <ScrollArea className="h-screen relative">
         <div className="container max-w-2xl mx-auto px-4 py-8">
           <Header />
 
@@ -40,6 +51,10 @@ export default function Home() {
           <div className="mt-6">
             <SpotifyCard />
           </div>
+
+          <footer className="mt-8 pb-8 text-center text-sm text-zinc-500">
+            © {new Date().getFullYear()} Natsumi. All rights reserved.
+          </footer>
         </div>
       </ScrollArea>
     </div>
