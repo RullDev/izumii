@@ -5,23 +5,26 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <div 
-        className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-zinc-800/50 to-transparent"
-        style={{
-          backgroundImage: "url('https://api.dicebear.com/7.x/identicon/svg?seed=banner')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          filter: 'blur(8px)',
-          opacity: 0.5,
-        }}
-      />
+    <div className="min-h-screen bg-zinc-950">
+      {/* Banner Background */}
+      <div className="fixed inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-[url('https://api.dicebear.com/7.x/shapes/svg?seed=banner&backgroundColor=0f0f0f')] bg-cover bg-center"
+          style={{
+            filter: 'blur(100px)',
+            transform: 'scale(1.2)',
+            opacity: 0.5
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-zinc-950/50 to-zinc-950" />
+      </div>
 
-      <ScrollArea className="h-screen relative">
-        <div className="container max-w-2xl mx-auto px-4 py-8">
+      {/* Content */}
+      <ScrollArea className="relative z-10 h-screen">
+        <div className="container max-w-2xl mx-auto px-4 py-12">
           <Header />
 
-          <div className="mt-6 space-y-4">
+          <div className="mt-8 space-y-3">
             <LinkCard
               title="Personal Website"
               description="About me."
@@ -52,7 +55,7 @@ export default function Home() {
             <SpotifyCard />
           </div>
 
-          <footer className="mt-8 pb-8 text-center text-sm text-zinc-500">
+          <footer className="mt-12 pb-8 text-center text-sm text-zinc-500">
             © {new Date().getFullYear()} Natsumi. All rights reserved.
           </footer>
         </div>
