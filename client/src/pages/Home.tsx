@@ -6,10 +6,10 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-black dark:bg-black">
       {/* Banner Background */}
       <div className="fixed inset-0 z-0">
-        <AspectRatio ratio={16 / 9} className="w-full absolute top-0">
+        <AspectRatio ratio={16 / 9} className="w-full">
           <div 
             className="absolute inset-0"
             style={{
