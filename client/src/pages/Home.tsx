@@ -6,14 +6,14 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black dark:bg-black">
+    <div className="min-h-screen bg-black">
       {/* Banner Background */}
       <div className="fixed inset-0 z-0">
         <AspectRatio ratio={16 / 9} className="w-full">
           <div 
             className="absolute inset-0"
             style={{
-              background: `url('https://api.dicebear.com/7.x/shapes/svg?seed=banner&backgroundColor=0f0f0f') center/cover no-repeat`,
+              background: `url('/banner.jpg') center/cover no-repeat`,
               filter: 'blur(90px) opacity(0.4)',
               transform: 'scale(1.1)',
             }}
