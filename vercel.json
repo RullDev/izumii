@@ -12,7 +12,7 @@
     }
   ],
   "routes": [
-    { "src": "/server/(.*)", "dest": "/server/index.ts" },
+    { "src": "/api/(.*)", "dest": "/server/index.ts" },
     { "src": "/(.*)", "dest": "/client/index.html" }
   ]
 }
